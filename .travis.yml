@@ -20,7 +20,6 @@ jobs:
         && yarn lint:css
     - stage: server testing
       script: cd server
-        && yarn test
         && yarn lint:js
     - stage: ui build
       script: cd ui 
