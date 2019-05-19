@@ -22,3 +22,9 @@ jobs:
       script: cd server
         && yarn test
         && yarn lint:js
+    - stage: ui build
+      script: cd ui 
+        && yarn build
+    - stage: server build
+      script: cd server
+        && yarn build
