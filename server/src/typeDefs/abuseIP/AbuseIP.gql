@@ -1,0 +1,13 @@
+type AbuseIP {
+    ipAddress: String,
+    isPublic: Boolean,
+    ipVersion: Int,
+    isWhitelisted: Boolean,
+    abuseConfidenceScore: Int
+    usageType: String,
+    domain: String
+}
+
+extend type Query {
+    abuseIP(ip: String!): AbuseIP
+}

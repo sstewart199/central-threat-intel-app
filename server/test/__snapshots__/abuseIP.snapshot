@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Schema Snapshots query: abuseIP 1`] = `
+Object {
+  "data": Object {
+    "abuseIP": Object {
+      "abuseConfidenceScore": 0,
+      "domain": "String",
+      "ipAddress": "String",
+      "ipVersion": 0,
+      "isPublic": false,
+      "isWhitelisted": false,
+      "usageType": "String",
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;

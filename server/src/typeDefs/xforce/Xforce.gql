@@ -1,0 +1,16 @@
+type Xforce {
+    ip: String,
+    score: Int,
+    reason: String,
+    reasonDescription: String,
+    geo: Geo
+}
+
+type Geo {
+    country: String,
+    countrycode: String,
+}
+
+extend type Query {
+    xforce(ip: String!): Xforce
+}
