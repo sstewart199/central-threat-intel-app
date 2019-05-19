@@ -5,6 +5,7 @@ env:
   - NODE_ENV='test'
 cache:
   yarn: true
-script: yarn test
+script: cd ui
+  && yarn test
   && yarn lint:js
   && yarn lint:css
