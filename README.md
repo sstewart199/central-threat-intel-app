@@ -5,7 +5,7 @@ With this application you can insert an I.P address and it will gather informati
 
 For v1 of CTIA (Central Threat Intelligence App) I have hooked up two feeds the [IBM XFE - X-Force Exchange](https://exchange.xforce.ibmcloud.com/) and [AbuseIPDB](https://www.abuseipdb.com/).
 
-CTIP will also display a map of the world showing the location of the IP Address.
+CTIA will also display a map of the world showing the location of the IP Address.
 
 
 #  How to Setup and Run
@@ -48,7 +48,7 @@ The frontend of this application has been built using:
 -  Plotly.js - D3.js based library for graphs and Maps
 -  .SCSS - For styling of components
 -  eslint - lint testing, went for airbnb, react and react-hooks plugin
--  **???? Unit Testing Framework**
+-  react-testing-library - Testing library: Prefer this over enzyme, as it does not allow shallow rendering which means you are forced to mock
 
   
 
