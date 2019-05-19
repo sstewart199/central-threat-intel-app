@@ -1,4 +1,4 @@
-# Central Threat Intelligence App!
+# Central Threat Intelligence App! [![Build Status](https://travis-ci.com/sstewart199/central-threat-intel-app.svg?branch=dev)](https://travis-ci.com/sstewart199/central-threat-intel-app)
 
 Hi! 👋 I hope you enjoy my application. The idea of this application is to have a central place for someone who wants to investigate an IP address to gather information. The internet is full of lots of different threat intelligence feeds however we have to go to multiple different locations to collect the information.
 With this application you can insert an I.P address and it will gather information from multiple locations.
@@ -9,7 +9,8 @@ CTIA will also display a map of the world showing the location of the IP Address
 
 
 #  How to Setup and Run
-You must setup and start both the UI and Server
+You must setup and start both the UI and Server, the only requirement before setting up the project is that you have Yarn installed.
+[Info to install Yarn can be found here.](https://yarnpkg.com/en/docs/install#mac-stable)
 
 ###  UI
 -  `cd ./ui` from the root of this project
