@@ -36,6 +36,7 @@ First we must set up our authentication details to connect to the multiple threa
 
 ### View in browser
 Graphql Playground is available at: [http://localhost:3600/graphql](http://localhost:3600/graphql)
+
 CITA UI will be available at: [http://localhost:3000/](http://localhost:3000/)
 
 ### How to use the Application
@@ -106,3 +107,5 @@ Travis does the following:
 - Tests the ui package stylelint
 - Tests the server package unit tests
 - Tests the server package eslint
+- Builds production UI
+- Builds production Server
