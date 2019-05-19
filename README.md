@@ -68,7 +68,8 @@ The Service Layer of the application has been built using:
 
 
 
-#Travis
+# Travis
+
 [![Build Status](https://travis-ci.com/sstewart199/central-threat-intel-app.svg?branch=dev)](https://travis-ci.com/sstewart199/central-threat-intel-app)
 
 Travis does the following:
