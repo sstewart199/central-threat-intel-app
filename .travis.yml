@@ -16,5 +16,6 @@ script: cd ui
   && yarn lint:js
   && yarn lint:css
   && cd ..
+  && cd server
   && yarn test
   && yarn lint:js
