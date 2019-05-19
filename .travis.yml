@@ -3,9 +3,10 @@ node_js:
   - 11.9
 env:
   - NODE_ENV='test'
+before_install: 
+  - cd ui
 cache:
   yarn: true
-script: cd ui
-  && yarn test
+script: yarn test
   && yarn lint:js
   && yarn lint:css
