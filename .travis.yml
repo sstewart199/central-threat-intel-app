@@ -11,11 +11,14 @@ before_install:
   - cd ..
 cache:
   yarn: true
-script: cd ui 
-  && yarn test
-  && yarn lint:js
-  && yarn lint:css
-  && cd ..
-  && cd server
-  && yarn test
-  && yarn lint:js
+jobs:
+  include:
+    - stage: ui testing
+      script: cd ui 
+        && yarn test
+        && yarn lint:js
+        && yarn lint:css
+    - stage: server testing
+      script: cd server
+        && yarn test
+        && yarn lint:js
