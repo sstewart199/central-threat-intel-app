@@ -65,7 +65,15 @@ The Service Layer of the application has been built using:
 
 #  Testing Framework
 
+## Automation E2E Tests
 
+For Automated E2E tests I decided to you codeceptjs. It is an extremely lightweight wrapper for webdriver.io and makes testing extremely
+easy and enjoyable.
+You will need 4 processes running to run the automated E2E tests. The UI, the server, selenium standalone server and then the automation itself.
+- First `cd ui` and `yarn dev`
+- In another terminal `cd server` and `yarn dev`
+- Now open another terminal and `cd ui` and `yarn autiomation:server` this will setup and run the server
+- Finally `cd ui` and `yarn automation:run` this will run the suite of tests extremely fast.
 
 
 # Travis

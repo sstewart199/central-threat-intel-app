@@ -41,8 +41,8 @@ const AbuseIPDB = ({ data }) => {
               <StructuredListCell head>Version</StructuredListCell>
               <StructuredListCell head>Whitelisted?</StructuredListCell>
               <StructuredListCell head>Abuse Confidence Score</StructuredListCell>
-              <StructuredListCell head>usageType</StructuredListCell>
-              <StructuredListCell head>domain</StructuredListCell>
+              <StructuredListCell head>Usage Type</StructuredListCell>
+              <StructuredListCell head>Domain</StructuredListCell>
             </StructuredListRow>
           </StructuredListHead>
           <StructuredListBody>

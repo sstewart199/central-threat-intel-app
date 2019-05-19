@@ -49,7 +49,9 @@ describe('AbuseIPDB', () => {
     expect(container.querySelectorAll('.bx--structured-list-th')[4].innerHTML).toEqual(
       'Abuse Confidence Score'
     );
-    expect(container.querySelectorAll('.bx--structured-list-th')[5].innerHTML).toEqual('usageType');
-    expect(container.querySelectorAll('.bx--structured-list-th')[6].innerHTML).toEqual('domain');
+    expect(container.querySelectorAll('.bx--structured-list-th')[5].innerHTML).toEqual(
+      'Usage Type'
+    );
+    expect(container.querySelectorAll('.bx--structured-list-th')[6].innerHTML).toEqual('Domain');
   });
 });
