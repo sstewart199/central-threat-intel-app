@@ -8,8 +8,6 @@ For v1 of CTIA (Central Threat Intelligence App) I have hooked up two feeds the 
 CTIP will also display a map of the world showing the location of the IP Address.
 
 
-  
-
 #  How to Setup and Run
 You must setup and start both the UI and Server
 
@@ -66,3 +64,16 @@ The Service Layer of the application has been built using:
 -  Jest - Unit testing framework
 
 #  Testing Framework
+
+
+
+
+#Travis
+[![Build Status](https://travis-ci.com/sstewart199/central-threat-intel-app.svg?branch=dev)](https://travis-ci.com/sstewart199/central-threat-intel-app)
+
+Travis does the following:
+- Tests the ui package unit tests
+- Tests the ui package eslint
+- Tests the ui package stylint
+- Tests the server package unit tests
+- Tests the server package eslint
