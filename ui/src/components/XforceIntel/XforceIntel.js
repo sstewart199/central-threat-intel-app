@@ -33,7 +33,7 @@ const XforceIntel = ({ data }) => {
               <StructuredListCell head>IP Address</StructuredListCell>
               <StructuredListCell head>Risk Score</StructuredListCell>
               <StructuredListCell head>Reason</StructuredListCell>
-              <StructuredListCell head>reasonDescription</StructuredListCell>
+              <StructuredListCell head>Reason Description</StructuredListCell>
               <StructuredListCell head>Country</StructuredListCell>
             </StructuredListRow>
           </StructuredListHead>
