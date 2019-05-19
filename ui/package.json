@@ -22,7 +22,7 @@
   },
   "scripts": {
     "dev": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts --max_old_space_size=4096 build",
     "test": "react-scripts test",
     "lint:js:fix": "npm run lint:js --fix",
     "lint:js": "eslint . --ignore-path .gitignore",
