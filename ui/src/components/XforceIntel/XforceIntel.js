@@ -14,7 +14,7 @@ import XFORCE_QUERY from './gql/xforceQuery';
 const XforceIntel = ({ data }) => {
   const renderLoading = () => {
     return (
-      <div style={{ width: '800px' }}>
+      <div className="loading-skeleton">
         <StructuredListSkeleton rowCount={1} />
       </div>
     );

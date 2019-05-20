@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import { TextInput } from 'carbon-components-react';
 import isIp from 'is-ip';
 import PropTypes from 'prop-types';
@@ -23,7 +23,7 @@ const SearchBar = ({ onChange }) => {
   }, [debouncedSearchTerm, onChange]);
 
   return (
-    <div>
+    <Fragment>
       <TextInput
         id="test2"
         placeholder="Investigate an IP Address"
@@ -33,7 +33,7 @@ const SearchBar = ({ onChange }) => {
         invalidText="A valid value is required"
         onChange={e => setSearchTerm(e.target.value)}
       />
-    </div>
+    </Fragment>
   );
 };
 
