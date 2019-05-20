@@ -14,7 +14,7 @@ import XFORCE_QUERY from './gql/xforceQuery';
 const XforceIntel = ({ data }) => {
   const renderLoading = () => {
     return (
-      <div style={{ width: '800px' }}>
+      <div className="loading-skeleton">
         <StructuredListSkeleton rowCount={1} />
       </div>
     );
@@ -33,7 +33,7 @@ const XforceIntel = ({ data }) => {
               <StructuredListCell head>IP Address</StructuredListCell>
               <StructuredListCell head>Risk Score</StructuredListCell>
               <StructuredListCell head>Reason</StructuredListCell>
-              <StructuredListCell head>reasonDescription</StructuredListCell>
+              <StructuredListCell head>Reason Description</StructuredListCell>
               <StructuredListCell head>Country</StructuredListCell>
             </StructuredListRow>
           </StructuredListHead>

@@ -1,5 +1,5 @@
 {
-  "name": "ui",
+  "name": "@central-threat-intel-app/ui",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,11 +22,13 @@
   },
   "scripts": {
     "dev": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts --max_old_space_size=4096 build",
     "test": "react-scripts test",
     "lint:js:fix": "npm run lint:js --fix",
     "lint:js": "eslint . --ignore-path .gitignore",
     "lint:css": "stylelint --syntax scss 'src/**/*.scss'",
+    "automation:server": "selenium-standalone install --config=e2eTests/seleniumConfig.js && selenium-standalone start --config=e2eTests/seleniumConfig.js",
+    "automation:run": "codeceptjs run --steps",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -46,6 +48,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
+    "codeceptjs": "^2.1.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "17.1.0",
     "eslint-config-prettier": "^4.3.0",
@@ -59,6 +62,8 @@
     "node-sass": "^4.12.0",
     "prettier": "^1.17.1",
     "prettier-stylelint": "^0.4.2",
+    "react-testing-library": "^7.0.0",
+    "selenium-standalone": "^6.16.0",
     "stylelint": "^10.0.1",
     "stylelint-config-prettier": "^5.2.0",
     "stylelint-config-recommended-scss": "^3.3.0",
@@ -67,6 +72,8 @@
     "stylelint-declaration-strict-value": "^1.1.3",
     "stylelint-no-unsupported-browser-features": "^3.0.2",
     "stylelint-order": "^3.0.0",
-    "stylelint-scss": "^3.6.1"
+    "stylelint-scss": "^3.6.1",
+    "webdriver": "^5.8.3",
+    "webdriverio": "^5.8.3"
   }
 }

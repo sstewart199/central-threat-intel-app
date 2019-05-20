@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       <Title titleText="Central Threat Intelligence App" />
       <SearchBar onChange={setIpAddress} />
-      {ipAddress && <XforceIntel ipAddress={ipAddress} />}
       {ipAddress && <AbuseIPDB ipAddress={ipAddress} />}
+      {ipAddress && <XforceIntel ipAddress={ipAddress} />}
       {ipAddress && <MapArea ipAddress={ipAddress} />}
     </div>
   );

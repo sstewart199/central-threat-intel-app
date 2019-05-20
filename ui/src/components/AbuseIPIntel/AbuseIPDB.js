@@ -14,7 +14,7 @@ import ABUSEIP_QUERY from './gql/abuseIPQuery';
 const AbuseIPDB = ({ data }) => {
   const renderLoading = () => {
     return (
-      <div style={{ width: '800px' }}>
+      <div className="loading-skeleton">
         <StructuredListSkeleton rowCount={1} />
       </div>
     );
@@ -41,8 +41,8 @@ const AbuseIPDB = ({ data }) => {
               <StructuredListCell head>Version</StructuredListCell>
               <StructuredListCell head>Whitelisted?</StructuredListCell>
               <StructuredListCell head>Abuse Confidence Score</StructuredListCell>
-              <StructuredListCell head>usageType</StructuredListCell>
-              <StructuredListCell head>domain</StructuredListCell>
+              <StructuredListCell head>Usage Type</StructuredListCell>
+              <StructuredListCell head>Domain</StructuredListCell>
             </StructuredListRow>
           </StructuredListHead>
           <StructuredListBody>
