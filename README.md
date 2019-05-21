@@ -1,6 +1,6 @@
 # Central Threat Intelligence App! [![Build Status](https://travis-ci.com/sstewart199/central-threat-intel-app.svg?branch=dev)](https://travis-ci.com/sstewart199/central-threat-intel-app)
 
-Hi! 👋 I hope you enjoy my application. The idea of this application is to have a central place for someone who wants to investigate an IP address to gather information. The internet is full of several different threat intelligence feeds, however, they cannont be accessesed via a single location to collect the information.
+Hi! 👋 I hope you enjoy my application. The idea of this application is to have a central place for someone who wants to investigate an IP address to gather information. The internet is full of several different threat intelligence feeds, however, they cannont be accessed via a single location to collect the information.
 With this application you can insert an I.P address and it will gather information from multiple locations.
 
 For v1 of CTIA (Central Threat Intelligence App) I have hooked up two feeds the [IBM XFE - X-Force Exchange](https://exchange.xforce.ibmcloud.com/) and [AbuseIPDB](https://www.abuseipdb.com/).
